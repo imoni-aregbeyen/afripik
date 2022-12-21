@@ -19,6 +19,26 @@
                 background-size: cover;
                 background-position: center;
             }
+            [class*="h-"] {
+                background-size: cover;
+                background-position: center;
+            }
+            .h-700 {height: 700px}
+            .h-600 {height: 600px}
+            .h-500 {height: 500px}
+            .h-400 {height: 400px}
+            .h-300 {height: 300px}
+            .h-250 {height: 250px}
+            .overlay {
+                background-color: rgba(255,255,255,0.1);
+                height: 100%;
+                min-height: 400px;
+            }
+            @media only screen and (min-width: 600px) {
+                .bg-img, .overlay {
+                    min-height: 700px;
+                }
+            }
         </style>
     </head>
     <body class="">

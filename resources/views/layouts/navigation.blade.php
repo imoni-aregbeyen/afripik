@@ -13,7 +13,7 @@
             <option value="audios">Audios</option>
             <option value="videos">Videos</option>
           </select>
-          <button class="btn" type="submit"><i class="bi bi-search"></i></button>
+          <button class="btn btn-light" type="submit"><i class="bi bi-search"></i></button>
         </div>
       </form>
       <ul class="navbar-nav">
@@ -33,3 +33,4 @@
     </div>
   </div>
 </nav>
+
