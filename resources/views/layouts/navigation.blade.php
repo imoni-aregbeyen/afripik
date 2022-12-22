@@ -24,10 +24,10 @@
           <a class="nav-link" href="#">Browse</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Log In</a>
+          <a class="nav-link" href="{{ route('login') }}">Log In</a>
         </li>
         <li class="nav-item">
-          <a class="btn btn-success" href="#">Sign Up</a>
+          <a class="btn btn-success" href="{{ route('register') }}">Sign Up</a>
         </li>
       </ul>
     </div>
