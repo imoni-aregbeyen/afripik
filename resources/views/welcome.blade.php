@@ -29,7 +29,7 @@
 <section class="container-fuild py-3 bg-dark text-light text-center">
   <p class="my-0">
     <span>Create An Account To Access More Downloads</span>
-    <a href="#" class="btn btn-success">Sign up for free</a>
+    <a href="{{ route('register') }}" class="btn btn-success">Sign up for free</a>
   </p>
 </section>
 
