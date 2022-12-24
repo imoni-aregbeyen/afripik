@@ -33,7 +33,7 @@
     <body>
         <nav class="navbar position-absolute top-0" style="z-index:1">
             <div class="container">
-                <a class="navbar-brand" href="{{ route('dashboard') }}">{{ strtoupper(config('app.name')) }}</a>
+                <a class="navbar-brand" href="{{ route('home') }}">{{ strtoupper(config('app.name')) }}</a>
             </div>
         </nav>
         <div class="row vh-100">

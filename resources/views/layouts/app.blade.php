@@ -98,7 +98,7 @@
                     <div class="col-12 col-lg-4">
                         <p class="">
                             <span>No Download Limits, Get Exclusive Images Sent To Your Mail Box</span>
-                            <a class="btn btn-success" href="#">Sign Up</a>
+                            <a class="btn btn-success" href="{{ route('login') }}">Sign Up</a>
                         </p>
                     </div>
                 </div>
