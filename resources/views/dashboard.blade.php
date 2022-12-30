@@ -30,7 +30,7 @@
   <div class="tab-pane fade show active" id="image-tab-pane" role="tabpanel" aria-labelledby="image-tab" tabindex="0">
     <div class="d-flex justify-content-between align-items-center">
       <h3 class="">FREE STOCK IMAGES</h3>
-      <div class="">
+      <div class="d-none d-lg-block">
         <div class="dropdown d-inline-block">
           <button class="btn btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
             Orientation
@@ -53,7 +53,6 @@
         </div>
       </div>
     </div>
-
     <div class="row g-2">
       <div class="col-lg-4">
         <div class="row g-2">
@@ -105,7 +104,109 @@
       <button class="btn btn-outline-dark">See More</button>
     </div>
   </div>
-  <div class="tab-pane fade" id="video-tab-pane" role="tabpanel" aria-labelledby="video-tab" tabindex="0">...</div>
+  <div class="tab-pane fade" id="video-tab-pane" role="tabpanel" aria-labelledby="video-tab" tabindex="0">
+    <div class="d-flex justify-content-between align-items-center">
+      <h3 class="">FREE TRENDING VIDEOS</h3>
+      <div class="d-none d-lg-block">
+        <div class="dropdown d-inline-block">
+          <button class="btn btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Sort by
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Most popular</a></li>
+            <li><a class="dropdown-item" href="#">Trending</a></li>
+            <li><a class="dropdown-item" href="#">Latest</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row g-2">
+      <div class="col-md-6 col-lg-4 position-relative">
+        <div class="h-600" style="background-image: url('img/vid1.jpeg');"></div>
+        <a href="" class="btn btn-light rounded-circle border-secondary position-absolute top-0 start-0 m-3 p-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+            <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+          </svg>
+        </a>
+        <span class="badge bg-success position-absolute bottom-0 start-0 m-3 p-2 fs-6">0:58</span>
+      </div>
+      <div class="col-md-6 col-lg-4 position-relative">
+        <div class="h-600" style="background-image: url('img/vid2.jpeg');"></div>
+        <a href="" class="btn btn-light rounded-circle border-secondary position-absolute top-0 start-0 m-3 p-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+            <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+          </svg>
+        </a>
+        <span class="badge bg-success position-absolute bottom-0 start-0 m-3 p-2 fs-6">0:58</span>
+      </div>
+      <div class="col-md-6 col-lg-4 position-relative">
+        <div class="h-600" style="background-image: url('img/vid3.jpeg');"></div>
+        <a href="" class="btn btn-light rounded-circle border-secondary position-absolute top-0 start-0 m-3 p-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+            <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+          </svg>
+        </a>
+        <span class="badge bg-success position-absolute bottom-0 start-0 m-3 p-2 fs-6">0:58</span>
+      </div>
+      <div class="col-md-6 col-lg-4 position-relative">
+        <div class="h-600" style="background-image: url('img/vid4.jpeg');"></div>
+        <a href="" class="btn btn-light rounded-circle border-secondary position-absolute top-0 start-0 m-3 p-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+            <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+          </svg>
+        </a>
+        <span class="badge bg-success position-absolute bottom-0 start-0 m-3 p-2 fs-6">0:58</span>
+      </div>
+      <div class="col-md-6 col-lg-4 position-relative">
+        <div class="h-600" style="background-image: url('img/vid5.jpeg');"></div>
+        <a href="" class="btn btn-light rounded-circle border-secondary position-absolute top-0 start-0 m-3 p-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+            <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+          </svg>
+        </a>
+        <span class="badge bg-success position-absolute bottom-0 start-0 m-3 p-2 fs-6">0:58</span>
+      </div>
+      <div class="col-md-6 col-lg-4 position-relative">
+        <div class="h-600" style="background-image: url('img/vid6.jpeg');"></div>
+        <a href="" class="btn btn-light rounded-circle border-secondary position-absolute top-0 start-0 m-3 p-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+            <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+          </svg>
+        </a>
+        <span class="badge bg-success position-absolute bottom-0 start-0 m-3 p-2 fs-6">0:58</span>
+      </div>
+      <div class="col-md-6 col-lg-4 position-relative">
+        <div class="h-600" style="background-image: url('img/vid7.jpeg');"></div>
+        <a href="" class="btn btn-light rounded-circle border-secondary position-absolute top-0 start-0 m-3 p-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+            <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+          </svg>
+        </a>
+        <span class="badge bg-success position-absolute bottom-0 start-0 m-3 p-2 fs-6">0:58</span>
+      </div>
+      <div class="col-md-6 col-lg-4 position-relative">
+        <div class="h-600" style="background-image: url('img/vid8.jpeg');"></div>
+        <a href="" class="btn btn-light rounded-circle border-secondary position-absolute top-0 start-0 m-3 p-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+            <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+          </svg>
+        </a>
+        <span class="badge bg-success position-absolute bottom-0 start-0 m-3 p-2 fs-6">0:58</span>
+      </div>
+      <div class="col-md-6 col-lg-4 position-relative">
+        <div class="h-600" style="background-image: url('img/vid9.jpeg');"></div>
+        <a href="" class="btn btn-light rounded-circle border-secondary position-absolute top-0 start-0 m-3 p-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+            <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+          </svg>
+        </a>
+        <span class="badge bg-success position-absolute bottom-0 start-0 m-3 p-2 fs-6">0:58</span>
+      </div>
+    </div>
+    <div class="py-5 text-center">
+      <button class="btn btn-outline-dark">See More</button>
+    </div>
+  </div>
   <div class="tab-pane fade" id="audio-tab-pane" role="tabpanel" aria-labelledby="audio-tab" tabindex="0">...</div>
 </div>
 

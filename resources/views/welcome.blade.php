@@ -8,9 +8,9 @@
       <h1 class="text-white mb-3">DISCOVER FREE IMAGES, AUDIO AND VIDEOS</h1>
       <div class="row">
         <div class="col-lg-4 mx-auto">
-          <form class="mb-3" role="search">
+          <form action="{{ route('search-result') }}" class="mb-3" role="search">
             <div class="input-group border rounded">
-              <input class="form-control border-0 w-50" type="search" placeholder="Search for free files..." aria-label="Search">
+              <input class="form-control border-0 w-50" type="search" name="search" placeholder="Search for free files..." aria-label="Search" required>
               <select name="select" id="select" class="form-select border-top-0 border-bottom-0">
                 <option value="images">Images</option>
                 <option value="audios">Audios</option>
