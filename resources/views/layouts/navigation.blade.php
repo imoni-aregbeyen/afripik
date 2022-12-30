@@ -23,12 +23,19 @@
         <li class="nav-item">
           <a class="nav-link" href="#">Browse</a>
         </li>
+        @guest
         <li class="nav-item">
           <a class="nav-link" href="{{ route('login') }}">Log In</a>
         </li>
         <li class="nav-item">
           <a class="btn btn-success" href="{{ route('register') }}">Sign Up</a>
         </li>
+        @else
+        <form method="POST" action="{{ route('logout') }}" class="nav-item">
+          @csrf
+          <button type="submit" class="btn btn-success">Log Out</button>
+        </form>
+        @endguest        
       </ul>
     </div>
   </div>
