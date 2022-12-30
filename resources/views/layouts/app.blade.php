@@ -23,6 +23,7 @@
                 background-size: cover;
                 background-position: center;
             }
+            .h-800 {height: 800px}
             .h-700 {height: 700px}
             .h-600 {height: 600px}
             .h-500 {height: 500px}
@@ -47,14 +48,14 @@
         <footer class="bg-dark text-light py-5">
             <div class="container">
                 <div class="row">
-                    <div class="col-6 col-lg-2 pb-3">
+                    <div class="col-6 col-lg pb-3">
                         <h6 class="">CONTENT</h6>
                         <p>New Images</p>
                         <p>Videos</p>
                         <p>Popular Searches</p>
                         <p>Collections</p>
                     </div>
-                    <div class="col-6 col-lg-2 pb-3">
+                    <div class="col-6 col-lg pb-3">
                         <h6 class="">LEGAL</h6>
                         <p>Terms & Conditions</p>
                         <p>License Agreement</p>
@@ -62,13 +63,13 @@
                         <p>Copyright Information</p>
                         <p>Cookies Settings</p>
                     </div>
-                    <div class="col-6 col-lg-2 pb-3">
+                    <div class="col-6 col-lg pb-3">
                         <h6 class="">HELP</h6>
                         <p>Pricing</p>
                         <p>Support</p>
                         <p>Contact</p>
                     </div>
-                    <div class="col-6 col-lg-2 pb-3">
+                    <div class="col-6 col-lg pb-3">
                         <h6 class="">FOLLOW US</h6>
                         <p>
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
@@ -95,12 +96,14 @@
                             <span>LinkedIn</span>
                         </p>
                     </div>
+                    @guest
                     <div class="col-12 col-lg-4">
                         <p class="">
                             <span>No Download Limits, Get Exclusive Images Sent To Your Mail Box</span>
                             <a class="btn btn-success" href="{{ route('login') }}">Sign Up</a>
                         </p>
                     </div>
+                    @endguest
                 </div>
             </div>
         </footer>
