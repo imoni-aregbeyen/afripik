@@ -207,7 +207,40 @@
       <button class="btn btn-outline-dark">See More</button>
     </div>
   </div>
-  <div class="tab-pane fade" id="audio-tab-pane" role="tabpanel" aria-labelledby="audio-tab" tabindex="0">...</div>
+  <div class="tab-pane fade" id="audio-tab-pane" role="tabpanel" aria-labelledby="audio-tab" tabindex="0">
+    <div class="d-flex justify-content-between align-items-center">
+      <h3 class="">FREE STOCK AUDIO</h3>
+      <div class="d-none d-lg-block">
+        <div class="dropdown d-inline-block">
+          <button class="btn btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Sort by
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Most popular</a></li>
+            <li><a class="dropdown-item" href="#">Trending</a></li>
+            <li><a class="dropdown-item" href="#">Latest</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row g-3">
+      <div class="col-12">
+        <div class="d-flex justify-content-between align-items-center bg-light rounded p-3">
+          <div class="left">
+            <a href="#" class="">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+                <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+              </svg>
+            </a>
+            
+          </div>
+          <div class="right">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
 
