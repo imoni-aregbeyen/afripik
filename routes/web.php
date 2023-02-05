@@ -25,4 +25,8 @@ Route::get('search-result', function () {
     return view('search-result');
 })->name('search-result');
 
+Route::get('premium', function () {
+    return view('premium');
+})->name('premium');
+
 require __DIR__.'/auth.php';

@@ -18,7 +18,7 @@
       </form>
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Get Premium</a>
+          <a class="nav-link active" aria-current="page" href="{{ route('premium') }}">Get Premium</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Browse</a>
