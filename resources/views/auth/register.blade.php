@@ -18,11 +18,11 @@
     </div>
     <div class="col-md-12">
         <label for="email" class="form-label">E-MAIL</label>
-        <input type="email" class="form-control" id="email" value="{{ old('email') }}" required>
+        <input type="email" class="form-control" name="email" id="email" value="{{ old('email') }}" required>
     </div>
     <div class="col-md-12">
         <label for="username" class="form-label">USERNAME</label>
-        <input type="text" name="username" id="username" class="form-control" required>
+        <input type="text" name="username" id="username" class="form-control" value="{{ old('username') }}" required>
     </div>
     <div class="col-md-12">
         <label for="password" class="form-label">PASSWORD</label>

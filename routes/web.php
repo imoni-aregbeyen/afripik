@@ -29,4 +29,8 @@ Route::get('premium', function () {
     return view('premium');
 })->name('premium');
 
+Route::get('admin', function () {
+    return view('admin.dashboard');
+})->name('admin');
+
 require __DIR__.'/auth.php';
