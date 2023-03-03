@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PhotoController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -34,3 +35,7 @@ Route::get('admin', function () {
 })->name('admin');
 
 require __DIR__.'/auth.php';
+
+Route::resource('photos', PhotoController::class)
+    ->only(['index', 'store', 'create']);
+    // ->middleware(['auth', 'verified']);
