@@ -36,6 +36,6 @@ Route::get('admin', function () {
 
 require __DIR__.'/auth.php';
 
-Route::resource('photos', PhotoController::class)
-    ->only(['index', 'store', 'create']);
+Route::resource('photos', PhotoController::class);
+    // ->only(['index', 'store', 'create']);
     // ->middleware(['auth', 'verified']);

@@ -25,7 +25,7 @@
                 </div>
                 <div class="col-12">
                   <!-- <label for="files" class="form-label">Files</label> -->
-                  <input type="file" name="files[]" id="files" class="form-control" required>
+                  <input type="file" name="files[]" id="files" class="form-control" accept=".jpg, .jpeg, .png" multiple required>
                 </div>
               </form><!-- End Add New Photo Form -->
 
@@ -47,5 +47,4 @@
         </div>
       </div>
     </section>
-
 @endsection

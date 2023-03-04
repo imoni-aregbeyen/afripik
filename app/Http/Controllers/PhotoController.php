@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Photo;
 use Illuminate\Http\Request;
+use File;
 
 class PhotoController extends Controller
 {
@@ -14,7 +15,9 @@ class PhotoController extends Controller
      */
     public function index()
     {
-        return view('admin.photos-index');
+        return view('admin.photos-index', [
+            'photos' => Photo::latest()->get(),
+        ]);
     }
 
     /**
@@ -35,7 +38,28 @@ class PhotoController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate($request, [
+            'title' => 'required|string|max:255',
+            'files' => 'required',
+            'files.*' => ''
+        ]);
+        $files = [];
+        if ($request->hasFile('files'))
+        {
+            foreach ($request->file('files') as $file)
+            {
+                $name = time() . rand(10,99). '.' . $file->getClientOriginalExtension();
+                $file->move(public_path('_photos'), $name);
+                $files[] = $name;
+            }
+        }
+        $photo = new Photo();
+        $photo->user_id = auth()->user()->id;
+        $photo->title = $request->title;
+        $photo->files = json_encode($files);
+        $photo->save();
+
+        return redirect(route('photos.index'));
     }
 
     /**
@@ -46,7 +70,9 @@ class PhotoController extends Controller
      */
     public function show(Photo $photo)
     {
-        //
+        return view('admin.photos-show', [
+            'photo' => $photo,
+        ]);
     }
 
     /**
@@ -69,7 +95,9 @@ class PhotoController extends Controller
      */
     public function update(Request $request, Photo $photo)
     {
-        //
+        $photo->title = $request->title;
+        $photo->save();
+        return back();
     }
 
     /**
@@ -80,6 +108,12 @@ class PhotoController extends Controller
      */
     public function destroy(Photo $photo)
     {
-        //
+        $files = json_decode($photo->files, true);
+        foreach ($files as $file)
+        {
+            File::delete(public_path("_photos\\$file"));
+        }
+        $photo->delete();
+        return redirect(route('photos.index'));
     }
 }
