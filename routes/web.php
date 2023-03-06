@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\PhotoController;
+use App\Http\Controllers\AudioController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -39,3 +40,5 @@ require __DIR__.'/auth.php';
 Route::resource('photos', PhotoController::class);
     // ->only(['index', 'store', 'create']);
     // ->middleware(['auth', 'verified']);
+
+Route::resource('audios', AudioController::class);
